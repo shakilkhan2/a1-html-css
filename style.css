@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Roboto";
+}
+/* nav section */
+.nav-items{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 50px;
+color: white;
+}
+.nav-menus {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    position: relative; /* Ensure relative positioning for the parent */
+}
+
+.nav-menus li {
+    cursor: pointer;
+    position: relative; /* Ensure relative positioning for the list items */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.nav-menus li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out; /* Transition the width property */
+}
+
+.nav-menus li:hover::after {
+    width: 100%; /* Expand the width to 100% on hover */
+}
+.logo:hover{
+    cursor: pointer;
+}
+.logo-box{
+    color: #1DAEDC;
+}
+
+/* banner section */
+.header-section{
+    background-image: url("./images/banner/banner3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+}
+.header-info{
+text-align: right;
+color: white;
+padding-right: 150px;
+padding-top: 120px;
+}
+.header-info h1{
+    font-size: 60px;
+}
+.header-info p{
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+.contact-btn{
+    padding: 12px 25px;
+    color: #005FAC;
+    border-radius: 5px;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+/* designing failure section */
+.my-failure{
+    display: flex;
+    margin: 100px 200px;
+    column-gap: 200px;
+    align-items: center;
+}
+.my-failure img{
+    width: 400px;
+}
+.failure-info p{
+    padding: 20px 0;
+}
+.failure-info ul{
+    list-style: none;
+
+}
+.failure-lists img{
+width: 15px;
+}
+.my-plans{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 150px 50px 150px;
+}
+.plan-headline h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.my-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-plan h2{
+    margin: 10px 0;
+}
+/* footer design */
+.footer{
+    background-color: #151414;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px;
+    margin-top: 400PX;
+}
+.future .description{
+padding: 20px 0;
+}
+.future .phone-no{
+    padding: 20px 0;
+}
+.social-media{
+    display: flex;
+    column-gap: 10px;
+}
+.social-media img:hover{
+    cursor: pointer;
+}
+.input-email{
+    margin: 10px 0;
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #151414;
+}
+.subscribe-btn{
+    padding: 12px 25px;
+    background-color: #005FAC;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+}
+
+/* img blending */
+/* .watch{
+    width: 800px;
+    position: relative;
+}
+.gradient1{
+    width: 800px;
+    position: absolute;
+    left: 0;
+} */
+.img-blending{
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+   top: 50px;
+}
+.watch{
+    width: 800px;
+    position: absolute;
+    left: 0;
+}
+.gradient1{
+    width: 800px;
+    position: absolute;
+    left: 0;
+}
+.info{
+    position: absolute;
+    color: white;
+    top: 40px;
+    left: 50px;
+    z-index: 1;
+}
+.info h1{
+    padding-bottom: 10px;
+}
